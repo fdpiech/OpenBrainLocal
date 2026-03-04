@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "open-brain": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/TO/open-brain/dist/mcp-server.js"],
+      "env": {
+        "OLLAMA_HOST": "http://localhost:11434",
+        "DB_PATH": "/ABSOLUTE/PATH/TO/open-brain/memories.db"
+      }
+    }
+  }
+}
