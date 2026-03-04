@@ -1,0 +1,36 @@
+{
+  "name": "openbrainlocal",
+  "version": "1.0.0",
+  "description": "Completely Local Open Brain instance",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "tsc",
+    "capture": "ts-node src/capture.ts",
+    "mcp": "ts-node src/mcp-server.ts",
+    "health": "bash scripts/health-check.sh",
+    "install-models": "ts-node scripts/install-models.ts",
+    "test:e2e": "bash scripts/test-e2e.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:54362/git/fdpiech/OpenBrainLocal"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "better-sqlite3": "^12.6.2",
+    "sqlite-vec": "^0.1.7-alpha.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
